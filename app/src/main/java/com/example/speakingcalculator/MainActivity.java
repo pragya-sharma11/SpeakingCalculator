@@ -7,6 +7,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 Float a = f1+f2;
                 String ans = Float.toString(a);
                 t.speak(ans, TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(MainActivity.this, "ans", Toast.LENGTH_SHORT).show();
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 Float a = f1-f2;
                 String ans = Float.toString(a);
                 t.speak(ans, TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(MainActivity.this, "ans", Toast.LENGTH_SHORT).show();
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 Float a = f1*f2;
                 String ans = Float.toString(a);
                 t.speak(ans, TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(MainActivity.this, "ans", Toast.LENGTH_SHORT).show();
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Float a = f1/f2;
                 String ans = Float.toString(a);
                 t.speak(ans, TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(MainActivity.this, "ans", Toast.LENGTH_SHORT).show();
             }
         });
     }
